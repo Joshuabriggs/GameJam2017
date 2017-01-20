@@ -7,7 +7,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField]
     float m_movementSpeed = 5.0f;
     [SerializeField]
-    private float m_rotationSpeed = 5.0f;
+    private float m_rotationSpeed = 45.0f;
     private bool keyLeft, keyRight, keyUp, keyDown, keySprint, keyRLeft, keyRRight;
     private Transform m_transform;
 
@@ -112,22 +112,22 @@ public class PlayerControl : MonoBehaviour
         //Move Left
         if (keyLeft)
         {
-            m_transform.Translate(m_transform.right * -m_movementSpeed * Time.deltaTime);
+            m_transform.Translate(new Vector3(1,0,0) * -m_movementSpeed * Time.deltaTime, Space.Self);
         }
         //Move Right
         if (keyRight)
         {
-            m_transform.Translate(m_transform.right * m_movementSpeed * Time.deltaTime);
+            m_transform.Translate(new Vector3(1, 0, 0) * m_movementSpeed * Time.deltaTime, Space.Self);
         }
         //Move Up
         if (keyUp)
         {
-            m_transform.Translate(m_transform.forward * m_movementSpeed * Time.deltaTime);
+            m_transform.Translate(new Vector3(0, 0, 1) * m_movementSpeed * Time.deltaTime, Space.Self);
         }
         //Move Down
         if (keyDown)
         {
-            m_transform.Translate(m_transform.forward * -m_movementSpeed * Time.deltaTime);
+            m_transform.Translate(new Vector3(0, 0, 1) * -m_movementSpeed * Time.deltaTime, Space.Self);
         }
         //Sprint
         if (keySprint)

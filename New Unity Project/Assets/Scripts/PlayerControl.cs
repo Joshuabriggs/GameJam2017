@@ -141,12 +141,12 @@ public class PlayerControl : MonoBehaviour
         //Rotate Left
         if (keyRLeft)
         {
-            m_transform.Rotate(m_transform.right * -m_rotateSpeed * Time.deltaTime);
+            m_transform.Rotate(m_transform.right * -m_rotationSpeed * Time.deltaTime);
         }
         //Rotate Right
         if (keyRRight)
         {
-            m_transform.Translate(m_transform.right * m_movementSpeed * Time.deltaTime);
+            m_transform.Rotate(m_transform.right * m_rotationSpeed * Time.deltaTime);
         }
     }
 }

@@ -17,6 +17,9 @@ public class PlayerControl : MonoBehaviour
     private AudioManager audioManager;
     [SerializeField]
     private float m_dashTimer;
+    [SerializeField]
+    private float m_floatPower = 10.0f;
+    private GameObject m_rthrust, m_lthrust, m_fthrust, m_bthrust;
 
     // Use this for initialization
     void Start()
@@ -26,6 +29,10 @@ public class PlayerControl : MonoBehaviour
         audioManager = AudioManager.instance;
         m_dashTimer = 0;
         m_dashing = true;
+        m_rthrust = GameObject.Find("RightThrust");
+        m_lthrust = GameObject.Find("LeftThrust");
+        m_fthrust = GameObject.Find("ForwardThrust");
+        m_bthrust = GameObject.Find("BackThrust");
     }
 
     // Update is called once per frame
@@ -39,7 +46,7 @@ public class PlayerControl : MonoBehaviour
             m_dashing = true;
             m_dashTimer = 0;
         }
-        if(m_dashing == false)
+        if (m_dashing == false)
         {
             m_dashTimer += Time.deltaTime;
         }
@@ -95,6 +102,7 @@ public class PlayerControl : MonoBehaviour
         {
             m_dashing = false;
             m_movementSpeed = 300f;
+            audioManager.PlaySound("Character_Dash");
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
@@ -144,21 +152,25 @@ public class PlayerControl : MonoBehaviour
         if (keyLeft)
         {
             m_transform.Translate(new Vector3(1,0,0) * -m_movementSpeed * Time.deltaTime, Space.Self);
+            m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_lthrust.transform.position);
         }
         //Move Right
         if (keyRight)
         {
             m_transform.Translate(new Vector3(1, 0, 0) * m_movementSpeed * Time.deltaTime, Space.Self);
+            m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_rthrust.transform.position);
         }
         //Move Up
         if (keyUp)
         {
             m_transform.Translate(new Vector3(0, 0, 1) * m_movementSpeed * Time.deltaTime, Space.Self);
+            m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_fthrust.transform.position);
         }
         //Move Down
         if (keyDown)
         {
             m_transform.Translate(new Vector3(0, 0, 1) * -m_movementSpeed * Time.deltaTime, Space.Self);
+            m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_bthrust.transform.position);
         }     
         //Rotate Left
         if (keyRLeft)
@@ -169,6 +181,7 @@ public class PlayerControl : MonoBehaviour
         if (keyRRight)
         {
             m_transform.Rotate(m_transform.up * m_rotationSpeed * Time.deltaTime);
+           
         }
         if(keySpace && m_jumping)
         {

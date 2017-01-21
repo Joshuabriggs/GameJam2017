@@ -35,6 +35,12 @@ public class Sound
         source.pitch = pitch * (1 + Random.Range(-PitchVarience / 2f, PitchVarience / 2f));
         source.Play();
     }
+    public void PlayOneShotSound()
+    {
+        source.volume = volume * (1 + Random.Range(-VolumeVarience / 2f, VolumeVarience / 2f));
+        source.pitch = pitch * (1 + Random.Range(-PitchVarience / 2f, PitchVarience / 2f));
+        source.PlayOneShot(source.clip, source.volume);
+    }
     public void Stop()
     {
         source.Stop();
@@ -81,6 +87,18 @@ public class AudioManager : MonoBehaviour {
             if(sounds[i].name == _name)
             {
                 sounds[i].Play();
+                return;
+            }
+        }
+        Debug.LogWarning("AudioManager: Sound not found in list = " + _name);
+    }
+    public void PlayShotSound(string _name)
+    {
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            if (sounds[i].name == _name)
+            {
+                sounds[i].PlayOneShotSound();
                 return;
             }
         }

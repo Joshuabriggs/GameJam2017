@@ -47,7 +47,7 @@ public class RockScript : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "wave")
+        if (collision.gameObject.tag == "wave" || collision.gameObject.tag == "Score")
         {
             Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
         }

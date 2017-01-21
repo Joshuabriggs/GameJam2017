@@ -30,6 +30,8 @@ public class PlayerControl : MonoBehaviour
     [SerializeField]
     private Sprite m_leanRight;
     private SpriteRenderer m_fairy;
+    [SerializeField]
+    private Animator m_flutter;
 
     UIManager UI;
 
@@ -48,12 +50,14 @@ public class PlayerControl : MonoBehaviour
         m_bthrust = GameObject.Find("BackThrust");
         m_dashEffect = GetComponent<ParticleSystem>();
         m_fairy = GetComponentInChildren<SpriteRenderer>();
+        m_flutter = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         m_movementSpeed = 5.0f;
+        m_flutter.SetInteger("State", 0);
         GetInput();
         if (UI.GetState() == 2)
         {
@@ -71,6 +75,7 @@ public class PlayerControl : MonoBehaviour
             if (m_dashTimer < 1)
             {
                 m_transform.Translate(new Vector3(0, 0, 1) * Time.deltaTime * 15, Space.Self);
+                m_flutter.SetInteger("State", 3);
             }
             
         }
@@ -93,24 +98,24 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             keyLeft = true;
-            m_fairy.sprite = m_leanLeft;
+            m_flutter.SetInteger("State", 2);
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
             keyLeft = false;
-            m_fairy.sprite = m_stand;
+            m_flutter.SetInteger("State", 0);
         }
         //Move Right
         if (Input.GetKey(KeyCode.D))
         {
             keyRight = true;
-            m_fairy.sprite = m_leanRight;
+            m_flutter.SetInteger("State", 1);
 
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
             keyRight = false;
-            m_fairy.sprite = m_stand;
+            m_flutter.SetInteger("State", 0);
 
         }
 

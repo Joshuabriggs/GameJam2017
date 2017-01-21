@@ -54,6 +54,8 @@ public class AudioManager : MonoBehaviour {
     [SerializeField]
     Sound[] sounds;
 
+    public AudioMixer masterMixer;
+
     void Awake()
     {
         if(instance != null)
@@ -115,5 +117,9 @@ public class AudioManager : MonoBehaviour {
             }
         }
         Debug.LogWarning("AudioManager: Sound not found in list = " + _name);
+    }
+    public void SetVolume(float _volume, string _mixerGroup)
+    {
+        masterMixer.SetFloat(_mixerGroup, _volume);
     }
 }

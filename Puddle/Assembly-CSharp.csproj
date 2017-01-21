@@ -45,7 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
+     <Compile Include="Assets\Audio\AudioManager.cs" />
      <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Scripts\Gamemanager.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />

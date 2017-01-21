@@ -20,6 +20,7 @@ public class StageManager : MonoBehaviour {
         InvokeRepeating("rateIncrease", 5, 5.0f);
         audioManager = AudioManager.instance;
         audioManager.PlaySound("Music_Drunken");
+        audioManager.PlaySound("Enviroment_PuddleWaves");
 
     }
 	

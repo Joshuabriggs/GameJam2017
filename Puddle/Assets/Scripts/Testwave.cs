@@ -5,7 +5,7 @@ public class Testwave : MonoBehaviour {
 
     private Transform m_transform;
     public float m_speed = 3;
-    public float m_moveSpeed = 0.01f;
+    public float m_moveSpeed = 0.005f;
     private GameObject m_floor;
   
 	// Use this for initialization
@@ -21,7 +21,7 @@ public class Testwave : MonoBehaviour {
 
         m_transform.Translate(new Vector3(0, -1, 0) * m_moveSpeed);
        
-        if(m_transform.localScale.y < -10)
+        if(m_transform.localScale.y < 0)
         {
 
             GetComponent<Collider>().enabled = false;

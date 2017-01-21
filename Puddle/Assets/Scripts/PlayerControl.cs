@@ -8,7 +8,7 @@ public class PlayerControl : MonoBehaviour
     float m_movementSpeed = 5.0f;
     [SerializeField]
     private float m_rotationSpeed = 45.0f;
-    private bool keyLeft, keyRight, keyUp, keyDown, keySprint, keyRLeft, keyRRight;
+    private bool keyLeft, keyRight, keyUp, keyDown, keySprint, keyRLeft, keyRRight, keySpace;
     private Transform m_transform;
 
     // Use this for initialization
@@ -97,6 +97,15 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
             keyRRight = false;
+        }
+        //Jump
+        if (Input.GetKey(KeyCode.Space))
+        {
+            keySpace = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            keySpace = false;
         }
 
     }

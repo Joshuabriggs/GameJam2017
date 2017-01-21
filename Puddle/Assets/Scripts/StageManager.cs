@@ -9,6 +9,7 @@ public class StageManager : MonoBehaviour {
     [SerializeField]
     private float m_spawnrate;
     public GameObject m_O1;
+    private AudioManager audioManager;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +18,10 @@ public class StageManager : MonoBehaviour {
         m_otimer = 0;
         m_spawnrate = 5;
         InvokeRepeating("rateIncrease", 5, 5.0f);
-	
-	}
+        audioManager = AudioManager.instance;
+        audioManager.PlaySound("Music_Drunken");
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -8,20 +8,41 @@ public class PlayerControl : MonoBehaviour
     float m_movementSpeed = 5.0f;
     [SerializeField]
     private float m_rotationSpeed = 45.0f;
+    [SerializeField]
+    private float m_jumpforce = 300f;
     private bool keyLeft, keyRight, keyUp, keyDown, keySprint, keyRLeft, keyRRight, keySpace;
     private Transform m_transform;
+    private bool m_jumping, m_dashing;
+    private Rigidbody m_rBody;
+    private AudioManager audioManager;
+    [SerializeField]
+    private float m_dashTimer;
 
     // Use this for initialization
     void Start()
     {
         m_transform = transform;
+        m_rBody = GetComponent<Rigidbody>();
+        audioManager = AudioManager.instance;
+        m_dashTimer = 0;
+        m_dashing = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        m_movementSpeed = 5.0f;
         GetInput();
+       
+        if(m_dashTimer > 5)
+        {
+            m_dashing = true;
+            m_dashTimer = 0;
+        }
+        if(m_dashing == false)
+        {
+            m_dashTimer += Time.deltaTime;
+        }
 
     }
 
@@ -70,9 +91,10 @@ public class PlayerControl : MonoBehaviour
             keyDown = false;
         }
         //Sprint
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && m_dashing)
         {
-            keySprint = true;
+            m_dashing = false;
+            m_movementSpeed = 300f;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
@@ -137,16 +159,7 @@ public class PlayerControl : MonoBehaviour
         if (keyDown)
         {
             m_transform.Translate(new Vector3(0, 0, 1) * -m_movementSpeed * Time.deltaTime, Space.Self);
-        }
-        //Sprint
-        if (keySprint)
-        {
-            m_movementSpeed = 10f;
-        }
-        if (!keySprint)
-        {
-            m_movementSpeed = 5f;
-        }
+        }     
         //Rotate Left
         if (keyRLeft)
         {
@@ -156,6 +169,20 @@ public class PlayerControl : MonoBehaviour
         if (keyRRight)
         {
             m_transform.Rotate(m_transform.up * m_rotationSpeed * Time.deltaTime);
+        }
+        if(keySpace && m_jumping)
+        {
+            m_rBody.AddForce(new Vector3(0, 1, 0) * m_jumpforce);
+            audioManager.PlaySound("Character_Jump");
+            m_jumping = false;
+        }
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if(col.gameObject.tag == ("floor"))
+        {
+            m_jumping = true;
         }
     }
 }

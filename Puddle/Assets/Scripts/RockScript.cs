@@ -8,12 +8,14 @@ public class RockScript : MonoBehaviour {
     private AudioManager audioManager;
     private GameObject m_splashtypeFeeder;
     private int m_type;
+    private Rigidbody m_rBody;
 
 	// Use this for initialization
 	void Start () {
 
         m_transform = transform;
         audioManager = AudioManager.instance;
+        m_rBody = GetComponent<Rigidbody>();
 	
 	}
 	
@@ -55,7 +57,7 @@ public class RockScript : MonoBehaviour {
          
             if (m_type == 2)
             {
-                GetComponent<Rigidbody>().Sleep();
+                m_rBody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
                 m_splashtypeFeeder = Instantiate(m_splash, m_transform.position - new Vector3(0, 0.5f, 0), Quaternion.identity);
                 m_splashtypeFeeder.GetComponent<Testwave>().m_splashType = m_type;
                 audioManager.PlayShotSound("Object_Drop");

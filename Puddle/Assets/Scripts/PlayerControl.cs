@@ -23,7 +23,16 @@ public class PlayerControl : MonoBehaviour
     private GameObject m_rthrust, m_lthrust, m_fthrust, m_bthrust;
     [SerializeField]
     private ParticleSystem m_dashEffect;
+    [SerializeField]
+    private Sprite m_stand;
+    [SerializeField]
+    private Sprite m_leanLeft;
+    [SerializeField]
+    private Sprite m_leanRight;
+    private SpriteRenderer m_fairy;
+
     UIManager UI;
+
     // Use this for initialization
     void Start()
     {
@@ -38,6 +47,7 @@ public class PlayerControl : MonoBehaviour
         m_fthrust = GameObject.Find("ForwardThrust");
         m_bthrust = GameObject.Find("BackThrust");
         m_dashEffect = GetComponent<ParticleSystem>();
+        m_fairy = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -60,7 +70,7 @@ public class PlayerControl : MonoBehaviour
             m_dashTimer += Time.deltaTime;
             if (m_dashTimer < 1)
             {
-                m_transform.Translate(new Vector3(0, 0, 1) * Time.deltaTime * 15, Space.Self);
+                m_transform.Translate(new Vector3(0, 0, -1) * Time.deltaTime * 15, Space.Self);
             }
             
         }
@@ -83,21 +93,25 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             keyLeft = true;
-
+            m_fairy.sprite = m_leanRight;
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
             keyLeft = false;
+            m_fairy.sprite = m_stand;
         }
         //Move Right
         if (Input.GetKey(KeyCode.D))
         {
             keyRight = true;
+            m_fairy.sprite = m_leanLeft;
 
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
             keyRight = false;
+            m_fairy.sprite = m_stand;
+
         }
 
         //Move Up
@@ -174,25 +188,25 @@ public class PlayerControl : MonoBehaviour
     {
 
         //Move Left
-        if (keyLeft)
+        if (keyRight)
         {
             m_transform.Translate(new Vector3(1,0,0) * -m_movementSpeed * Time.deltaTime, Space.Self);
             m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_lthrust.transform.position);
         }
         //Move Right
-        if (keyRight)
+        if (keyLeft)
         {
             m_transform.Translate(new Vector3(1, 0, 0) * m_movementSpeed * Time.deltaTime, Space.Self);
             m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_rthrust.transform.position);
         }
         //Move Up
-        if (keyUp)
+        if (keyDown)
         {
             m_transform.Translate(new Vector3(0, 0, 1) * m_movementSpeed * Time.deltaTime, Space.Self);
             m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_fthrust.transform.position);
         }
         //Move Down
-        if (keyDown)
+        if (keyUp)
         {
             m_transform.Translate(new Vector3(0, 0, 1) * -m_movementSpeed * Time.deltaTime, Space.Self);
             m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_bthrust.transform.position);

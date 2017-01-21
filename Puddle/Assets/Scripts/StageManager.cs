@@ -19,17 +19,21 @@ public class StageManager : MonoBehaviour
     public GameObject m_O4;
     public GameObject m_O5;
     public GameObject m_wave;
+    [SerializeField]
+    float m_waveHeight;
     public GameObject m_scorePoint;
     private AudioManager audioManager;
     private int m_spawnChoice;
     private int m_rockCount;
     
     public int m_score;
-
+    public int m_highScore;
+    UIManager UI;
     // Use this for initialization
     void Start()
     {
-
+        m_highScore = PlayerPrefs.GetInt("HighScore");
+        UI = GameObject.Find("Canvas").GetComponent<UIManager>();
         m_score = 0;
         m_round = 1;
         m_otimer = 0;
@@ -52,8 +56,16 @@ public class StageManager : MonoBehaviour
         m_otimer += Time.deltaTime;
         m_waveSpawn -= Time.deltaTime;
 
-        GameObject.Find("Number").GetComponent<Text>().text = ""+m_score;
-        GameObject.Find("wavenumber").GetComponent<Text>().text = "" + m_round;
+        if(UI.GetState() == 2){
+            GameObject.Find("Number").GetComponent<Text>().text = ""+m_score;
+            GameObject.Find("wavenumber").GetComponent<Text>().text = "" + m_round;
+        }
+        GameObject.Find("Number (2)").GetComponent<Text>().text = "" + m_highScore;
+        if(m_score > m_highScore)
+        {
+            m_highScore = m_score;
+            PlayerPrefs.SetInt("HighScore", m_highScore);
+        }
 
         if (m_timer > 30)
         {
@@ -192,7 +204,6 @@ public class StageManager : MonoBehaviour
         if (m_round >= 9)
         {
             m_spawnChoice = Random.Range(1, 4);
-
             switch (m_spawnChoice)
             {
                 case 1:
@@ -238,18 +249,13 @@ public class StageManager : MonoBehaviour
                     }
                     break;
             }
-
         }
 
         if (m_waveSpawn < 0)
         {
-            Instantiate(m_wave, new Vector3(0, 0, 25), Quaternion.Euler(0, 0, 90));
+            Instantiate(m_wave, new Vector3(0, m_waveHeight, 25), Quaternion.Euler(0, 0, 90));
             m_waveSpawn = 10;
         }
-
-
-
-
     }
 
     public void BacktoMenu()
@@ -259,8 +265,7 @@ public class StageManager : MonoBehaviour
 
     void rateIncrease()
     {
-        m_spawnrate *= 0.85f - (m_round / 40);
-        
+        m_spawnrate *= 0.85f - (m_round / 40);   
     }
     void scoreTick()
     {

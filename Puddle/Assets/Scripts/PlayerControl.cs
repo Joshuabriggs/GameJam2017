@@ -23,10 +23,11 @@ public class PlayerControl : MonoBehaviour
     private GameObject m_rthrust, m_lthrust, m_fthrust, m_bthrust;
     [SerializeField]
     private ParticleSystem m_dashEffect;
-
+    UIManager UI;
     // Use this for initialization
     void Start()
     {
+        UI = GameObject.Find("Canvas").GetComponent<UIManager>();
         m_transform = transform;
         m_rBody = GetComponent<Rigidbody>();
         audioManager = AudioManager.instance;
@@ -44,8 +45,11 @@ public class PlayerControl : MonoBehaviour
     {
         m_movementSpeed = 5.0f;
         GetInput();
-
-        GameObject.Find("Dash Slider").GetComponent<Slider>().value = m_dashTimer;
+        if (UI.GetState() == 2)
+        {
+            GameObject.Find("Dash Slider").GetComponent<Slider>().value = m_dashTimer;
+        }
+        
         if (m_dashTimer > 5)
         {
             m_dashing = true;

@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
     [SerializeField]
     GameObject[] UIElements;
     int currentState;
+    bool first = false;
 
     void Start()
     {
@@ -30,7 +32,13 @@ public class UIManager : MonoBehaviour {
             UIElements[10].SetActive(false);
             UIElements[11].SetActive(false);
             UIElements[12].SetActive(false);
-            UIElements[13].SetActive(false);
+            if (!first)
+            {
+                GameObject.Find("Number (2)").GetComponent<Text>().text = "" + PlayerPrefs.GetInt("HighScore");
+                Debug.Log(PlayerPrefs.GetInt("HighScore"));
+                first = true;
+            }
+
         }
         if (currentState == 1)
         {
@@ -47,7 +55,7 @@ public class UIManager : MonoBehaviour {
             UIElements[10].SetActive(false);
             UIElements[11].SetActive(false);
             UIElements[12].SetActive(false);
-            UIElements[13].SetActive(false);
+           
         }
         if (currentState == 2)
         {
@@ -64,13 +72,16 @@ public class UIManager : MonoBehaviour {
             UIElements[10].SetActive(true);
             UIElements[11].SetActive(true);
             UIElements[12].SetActive(true);
-            UIElements[13].SetActive(true);
         }
     }
     public void ChangeState(int state)
     {
         currentState = state;
         Debug.Log(currentState);
+    }
+    public int GetState()
+    {
+        return currentState;
     }
 
 }

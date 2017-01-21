@@ -4,13 +4,32 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class MenuManager : MonoBehaviour {
+
+    public static MenuManager instance;
     [SerializeField]
     UIManager UI;
     bool menuMusic = false;
 
     private AudioManager audiomanager;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+
+    void Awake()
+    {
+        if (instance != null)
+        {
+            if (instance != this)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
+
+    void Start () {
         audiomanager = AudioManager.instance;
         if(audiomanager == null)
         {

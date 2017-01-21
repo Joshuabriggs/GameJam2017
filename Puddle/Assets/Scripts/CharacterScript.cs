@@ -22,7 +22,7 @@ public class CharacterScript : MonoBehaviour
         
         if (col.gameObject.tag == ("floor"))
         {
-            SceneManager.LoadScene(0);
+            Gamemanager.instance.stManager.BacktoMenu();
             Destroy(gameObject);
         }
     }

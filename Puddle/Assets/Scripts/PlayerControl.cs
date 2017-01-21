@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -29,12 +30,13 @@ public class PlayerControl : MonoBehaviour
         m_transform = transform;
         m_rBody = GetComponent<Rigidbody>();
         audioManager = AudioManager.instance;
-        m_dashTimer = 0;
+        m_dashTimer = 5;
         m_dashing = true;
         m_rthrust = GameObject.Find("RightThrust");
         m_lthrust = GameObject.Find("LeftThrust");
         m_fthrust = GameObject.Find("ForwardThrust");
         m_bthrust = GameObject.Find("BackThrust");
+        m_dashEffect = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -42,15 +44,21 @@ public class PlayerControl : MonoBehaviour
     {
         m_movementSpeed = 5.0f;
         GetInput();
-       
-        if(m_dashTimer > 5)
+
+        GameObject.Find("Dash Slider").GetComponent<Slider>().value = m_dashTimer;
+        if (m_dashTimer > 5)
         {
             m_dashing = true;
-            m_dashTimer = 0;
+            
         }
         if (m_dashing == false)
         {
             m_dashTimer += Time.deltaTime;
+            if (m_dashTimer < 1)
+            {
+                m_transform.Translate(new Vector3(0, 0, 1) * Time.deltaTime * 15, Space.Self);
+            }
+            
         }
 
         if(m_jumping == false)
@@ -112,8 +120,8 @@ public class PlayerControl : MonoBehaviour
         //Sprint
         if (Input.GetKey(KeyCode.LeftShift) && m_dashing)
         {
+            m_dashTimer = 0;
             m_dashing = false;
-            m_transform.Translate(new Vector3(0, 0, 1) * 5, Space.Self);
             audioManager.PlaySound("Character_Dash");
             m_dashEffect.Play();
         }

@@ -30,6 +30,7 @@ public class UIManager : MonoBehaviour {
             UIElements[10].SetActive(false);
             UIElements[11].SetActive(false);
             UIElements[12].SetActive(false);
+            UIElements[13].SetActive(false);
         }
         if (currentState == 1)
         {
@@ -46,6 +47,7 @@ public class UIManager : MonoBehaviour {
             UIElements[10].SetActive(false);
             UIElements[11].SetActive(false);
             UIElements[12].SetActive(false);
+            UIElements[13].SetActive(false);
         }
         if (currentState == 2)
         {
@@ -62,6 +64,7 @@ public class UIManager : MonoBehaviour {
             UIElements[10].SetActive(true);
             UIElements[11].SetActive(true);
             UIElements[12].SetActive(true);
+            UIElements[13].SetActive(true);
         }
     }
     public void ChangeState(int state)

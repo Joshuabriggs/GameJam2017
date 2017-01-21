@@ -24,7 +24,9 @@ public class StageManager : MonoBehaviour
     public GameObject m_scorePoint;
     private AudioManager audioManager;
     private int m_spawnChoice;
+    [SerializeField]
     private int m_rockCount;
+    private GameObject[] m_rocks;
     
     public int m_score;
     public int m_highScore;
@@ -38,7 +40,7 @@ public class StageManager : MonoBehaviour
         m_round = 1;
         m_otimer = 0;
         m_spawnrate = 5;
-        m_rockCount = 3;
+        m_rockCount = 0;
         InvokeRepeating("rateIncrease", 5, 5.0f);
         InvokeRepeating("scoreTick", 0, 1.0f);
         InvokeRepeating("scoreSpawn", 0, 10.0f);
@@ -73,11 +75,12 @@ public class StageManager : MonoBehaviour
             m_round++;
             m_spawnrate = 5;
             m_otimer = 0;
-            while(m_rockCount > 0)
+            m_rocks = GameObject.FindGameObjectsWithTag("type2");
+            for(int i = 0; i < m_rocks.Length; i ++)
             {
-                Destroy(GameObject.FindGameObjectWithTag("type2"));
-                m_rockCount--;
+                Destroy(m_rocks[i]);
             }
+           
         }
 
         if (m_round < 3)
@@ -109,6 +112,7 @@ public class StageManager : MonoBehaviour
                         {
                             m_otimer = 0;
                             Instantiate(m_O2, new Vector3(Random.Range(-20, 20), 20, Random.Range(-20, 20)), Quaternion.identity);
+                            m_rockCount++;
                         }
                         else
                         {
@@ -140,6 +144,7 @@ public class StageManager : MonoBehaviour
                         {
                             m_otimer = 0;
                             Instantiate(m_O2, new Vector3(Random.Range(-20, 20), 20, Random.Range(-20, 20)), Quaternion.identity);
+                            m_rockCount++;
                         }
                         else
                         {
@@ -177,6 +182,7 @@ public class StageManager : MonoBehaviour
                         {
                             m_otimer = 0;
                             Instantiate(m_O2, new Vector3(Random.Range(-20, 20), 20, Random.Range(-20, 20)), Quaternion.identity);
+                            m_rockCount++;
                         }
                         else
                         {
@@ -220,6 +226,7 @@ public class StageManager : MonoBehaviour
                         {
                             m_otimer = 0;
                             Instantiate(m_O2, new Vector3(Random.Range(-20, 20), 20, Random.Range(-20, 20)), Quaternion.identity);
+                            m_rockCount++;
                         }
                         else
                         {

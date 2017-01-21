@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class MenuManager : MonoBehaviour {
-
+    [SerializeField]
+    UIManager UI;
     bool menuMusic = false;
 
     private AudioManager audiomanager;
@@ -26,15 +27,23 @@ public class MenuManager : MonoBehaviour {
             menuMusic = true;
         }
 	}
+
     public void StartClicked()
     {
         audiomanager.PlayShotSound("Character_Jump");
         audiomanager.StopSound("Music_Menu");
+        UI.ChangeState(2);
         SceneManager.LoadScene("Test scene");
     }
     public void SettingsClicked()
     {
         audiomanager.PlayShotSound("Character_Jump");
+        UI.ChangeState(1);
+    }
+    public void BackClicked()
+    {
+        audiomanager.PlayShotSound("Character_Jump");
+        UI.ChangeState(0);
     }
     public void QuiteClicked()
     {

@@ -95,6 +95,7 @@ public class PlayerControl : MonoBehaviour
         {
             m_dashing = false;
             m_movementSpeed = 300f;
+            audioManager.PlaySound("Character_Dash");
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {

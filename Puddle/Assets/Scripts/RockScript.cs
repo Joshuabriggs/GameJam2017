@@ -23,7 +23,7 @@ public class RockScript : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
         Instantiate(m_splash, m_transform.position, Quaternion.identity);
-        audioManager.PlayShotSound("Character_Dash");
+        audioManager.PlayShotSound("Object_Drop");
         Destroy(gameObject);
     }
 }

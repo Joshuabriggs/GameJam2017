@@ -28,7 +28,7 @@ public class Testwave : MonoBehaviour {
         }
         else
         {
-            m_transform.localScale += new Vector3(m_speed, -m_speed, m_speed);
+            m_transform.localScale += new Vector3(m_speed * 2, -m_speed, m_speed * 2);
         }
         
         if(m_transform.position.y < -10)

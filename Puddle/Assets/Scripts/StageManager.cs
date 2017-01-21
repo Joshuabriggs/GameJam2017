@@ -8,7 +8,10 @@ public class StageManager : MonoBehaviour {
     public float m_round;
     [SerializeField]
     private float m_spawnrate;
+    [SerializeField]
+    private float m_waveSpawn = 10f;
     public GameObject m_O1;
+    public GameObject m_wave;
     private AudioManager audioManager;
 
 	// Use this for initialization
@@ -29,6 +32,7 @@ public class StageManager : MonoBehaviour {
 
         m_timer += Time.deltaTime;
         m_otimer += Time.deltaTime;
+        m_waveSpawn -= Time.deltaTime;
 
         if (m_timer > 30)
         {
@@ -42,6 +46,12 @@ public class StageManager : MonoBehaviour {
         {
             m_otimer = 0;
             Instantiate(m_O1, new Vector3(Random.Range(-20, 20), 20, Random.Range(-20, 20)), Quaternion.identity);
+        }
+
+        if(m_waveSpawn < 0)
+        {
+            Instantiate(m_wave, new Vector3(0, 0, 25), Quaternion.Euler(0,0,90));
+            m_waveSpawn = 10;
         }
 
 

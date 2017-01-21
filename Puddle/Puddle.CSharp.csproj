@@ -78,6 +78,7 @@
     <Compile Include="Assets\Audio\AudioManager.cs" />
     <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
+    <Compile Include="Assets\Scripts\FlowingWave.cs" />
     <Compile Include="Assets\Scripts\Gamemanager.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\RockScript.cs" />

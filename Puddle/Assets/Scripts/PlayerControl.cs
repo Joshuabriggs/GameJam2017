@@ -70,7 +70,7 @@ public class PlayerControl : MonoBehaviour
             m_dashTimer += Time.deltaTime;
             if (m_dashTimer < 1)
             {
-                m_transform.Translate(new Vector3(0, 0, -1) * Time.deltaTime * 15, Space.Self);
+                m_transform.Translate(new Vector3(0, 0, 1) * Time.deltaTime * 15, Space.Self);
             }
             
         }
@@ -93,7 +93,7 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             keyLeft = true;
-            m_fairy.sprite = m_leanRight;
+            m_fairy.sprite = m_leanLeft;
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
@@ -104,7 +104,7 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             keyRight = true;
-            m_fairy.sprite = m_leanLeft;
+            m_fairy.sprite = m_leanRight;
 
         }
         if (Input.GetKeyUp(KeyCode.D))
@@ -200,13 +200,13 @@ public class PlayerControl : MonoBehaviour
             m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_rthrust.transform.position);
         }
         //Move Up
-        if (keyDown)
+        if (keyUp)
         {
             m_transform.Translate(new Vector3(0, 0, 1) * m_movementSpeed * Time.deltaTime, Space.Self);
             m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_fthrust.transform.position);
         }
         //Move Down
-        if (keyUp)
+        if (keyDown)
         {
             m_transform.Translate(new Vector3(0, 0, 1) * -m_movementSpeed * Time.deltaTime, Space.Self);
             m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_bthrust.transform.position);

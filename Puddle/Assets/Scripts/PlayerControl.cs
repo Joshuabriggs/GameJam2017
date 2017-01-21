@@ -18,8 +18,10 @@ public class PlayerControl : MonoBehaviour
     [SerializeField]
     private float m_dashTimer;
     [SerializeField]
-    private float m_floatPower = 10.0f;
+    private float m_floatPower = 5f;
     private GameObject m_rthrust, m_lthrust, m_fthrust, m_bthrust;
+    [SerializeField]
+    private ParticleSystem m_dashEffect;
 
     // Use this for initialization
     void Start()
@@ -50,6 +52,16 @@ public class PlayerControl : MonoBehaviour
         {
             m_dashTimer += Time.deltaTime;
         }
+
+        if(m_jumping == false)
+        {
+            m_floatPower = 0.5f;
+        }
+        else
+        {
+            m_floatPower = 4.5f;
+        }
+        m_rBody.AddForce(new Vector3(0, 1, 0));
 
     }
 
@@ -101,8 +113,9 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && m_dashing)
         {
             m_dashing = false;
-            m_movementSpeed = 300f;
+            m_transform.Translate(new Vector3(0, 0, 1) * 5, Space.Self);
             audioManager.PlaySound("Character_Dash");
+            m_dashEffect.Play();
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
@@ -196,6 +209,11 @@ public class PlayerControl : MonoBehaviour
         if(col.gameObject.tag == ("floor"))
         {
             m_jumping = true;
+        }
+        if(col.gameObject.tag == ("Score"))
+        {
+            Gamemanager.instance.stManager.addScore();
+            Destroy(col.gameObject);
         }
     }
 }

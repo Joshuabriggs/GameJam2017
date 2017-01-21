@@ -10,8 +10,8 @@ public class Gamemanager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-        
+
+        stManager = GameObject.Find("ScriptsObject").GetComponent<StageManager>();
 	}
 	
 	// Update is called once per frame

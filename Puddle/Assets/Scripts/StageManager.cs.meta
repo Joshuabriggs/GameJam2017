@@ -1,10 +1,18 @@
 fileFormatVersion: 2
 guid: 204e27ab22ba4684cafbd4c9f4448dc2
-timeCreated: 1484943952
-licenseType: Pro
+timeCreated: 1484985041
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_O1: {fileID: 109944, guid: 8b80c57d72278124f960b0c2497798e9, type: 2}
+  - m_O2: {fileID: 1414200514797052, guid: e2582781ad5e3dd4b97d6c10cc2ac44d, type: 2}
+  - m_O3: {fileID: 1915538383977232, guid: d97be54f8af83fa4281a58a681717124, type: 2}
+  - m_O4: {fileID: 1063652953129048, guid: 98b69e8cf1d49ee48b800e2f7f69267e, type: 2}
+  - m_O5: {fileID: 1246241395071132, guid: 1b27fb5b1259e6547a86e88daf1f68d7, type: 2}
+  - m_wave: {fileID: 1022504866550816, guid: f18288c3cd3e7ac4c87cf356abc37691, type: 2}
+  - m_scorePoint: {fileID: 1128046833690404, guid: 019eaf4589498b943bc119f31a0b48e3,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

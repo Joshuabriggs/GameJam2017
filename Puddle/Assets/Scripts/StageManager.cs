@@ -11,6 +11,10 @@ public class StageManager : MonoBehaviour {
     [SerializeField]
     private float m_waveSpawn = 10f;
     public GameObject m_O1;
+    public GameObject m_O2;
+    public GameObject m_O3;
+    public GameObject m_O4;
+    public GameObject m_O5;
     public GameObject m_wave;
     private AudioManager audioManager;
 
@@ -40,6 +44,11 @@ public class StageManager : MonoBehaviour {
             m_round++;
             m_spawnrate = 5; 
             m_otimer = 0;
+        }
+
+        if (m_round < 3)
+        {
+
         }
 
         if(m_otimer > m_spawnrate)

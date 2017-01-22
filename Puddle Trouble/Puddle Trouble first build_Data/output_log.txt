@@ -2,59 +2,51 @@ Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 870M (ID=0x1199)
+    Renderer: NVIDIA GeForce GTX 780 (ID=0x1004)
     Vendor:   NVIDIA
-    VRAM:     3007 MB
-    Driver:   20.19.15.4549
+    VRAM:     3039 MB
+    Driver:   21.21.13.6909
 Begin MonoManager ReloadAssembly
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.258 seconds
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.022 seconds
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 59Hz; virtual: 3122x1080 at -1202,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.108902 ms
+UnloadTime: 0.790236 ms
 It begins
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-0
+18
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3eb4 -> priority: 1 
-  Thread -> id: f94 -> priority: 1 
+  Thread -> id: 405c -> priority: 1 
+  Thread -> id: 4278 -> priority: 1 
 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.419378 ms
+UnloadTime: 1.239919 ms
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 634.
-Total: 0.596147 ms (FindLiveObjects: 0.032501 ms CreateObjectMapping: 0.022665 ms MarkObjects: 0.314752 ms  DeleteObjects: 0.225372 ms)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Total: 0.471918 ms (FindLiveObjects: 0.031012 ms CreateObjectMapping: 0.018432 ms MarkObjects: 0.239908 ms  DeleteObjects: 0.181979 ms)
 
 AudioManager: Sound not found in list = Object_Drop
  

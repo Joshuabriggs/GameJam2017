@@ -2,51 +2,63 @@ Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 870M (ID=0x1199)
+    Renderer: NVIDIA GeForce GTX 780 (ID=0x1004)
     Vendor:   NVIDIA
-    VRAM:     3007 MB
-    Driver:   20.19.15.4549
+    VRAM:     3039 MB
+    Driver:   21.21.13.6909
 Begin MonoManager ReloadAssembly
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.033 seconds
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: G:\Global game jam 2017\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.100 seconds
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Puddle Trouble first build for realsies_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 59Hz; virtual: 3122x1080 at -1202,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.027649 ms
+UnloadTime: 0.818908 ms
 It begins
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-278
+0
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3250 -> priority: 1 
-  Thread -> id: 1cb0 -> priority: 1 
+  Thread -> id: 2bac -> priority: 1 
+  Thread -> id: 1804 -> priority: 1 
 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.658436 ms
+UnloadTime: 1.123183 ms
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 634.
-Total: 0.753523 ms (FindLiveObjects: 0.038061 ms CreateObjectMapping: 0.023093 ms MarkObjects: 0.384459 ms  DeleteObjects: 0.307482 ms)
+Total: 0.467237 ms (FindLiveObjects: 0.033938 ms CreateObjectMapping: 0.021942 ms MarkObjects: 0.232302 ms  DeleteObjects: 0.179053 ms)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 AudioManager: Sound not found in list = Object_Drop
  
@@ -65,168 +77,8 @@ NullReferenceException
  
 (Filename:  Line: -1)
 
-UnloadTime: 1.132423 ms
+UnloadTime: 0.669989 ms
 
 Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 733.
-Total: 1.699918 ms (FindLiveObjects: 0.040199 ms CreateObjectMapping: 0.024803 ms MarkObjects: 0.401565 ms  DeleteObjects: 1.232922 ms)
-
-2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.288665 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 636.
-Total: 0.639768 ms (FindLiveObjects: 0.042337 ms CreateObjectMapping: 0.023948 ms MarkObjects: 0.317318 ms  DeleteObjects: 0.256163 ms)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.075118 ms
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 733.
-Total: 1.876111 ms (FindLiveObjects: 0.061581 ms CreateObjectMapping: 0.033784 ms MarkObjects: 0.520025 ms  DeleteObjects: 1.259436 ms)
-
-2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.251032 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 636.
-Total: 0.654308 ms (FindLiveObjects: 0.041482 ms CreateObjectMapping: 0.023520 ms MarkObjects: 0.328864 ms  DeleteObjects: 0.260012 ms)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.892083 ms
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 733.
-Total: 1.631494 ms (FindLiveObjects: 0.067996 ms CreateObjectMapping: 0.023520 ms MarkObjects: 0.361794 ms  DeleteObjects: 1.178182 ms)
-
-2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.262150 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 636.
-Total: 0.995147 ms (FindLiveObjects: 0.064147 ms CreateObjectMapping: 0.052601 ms MarkObjects: 0.495221 ms  DeleteObjects: 0.381466 ms)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-AudioManager: Sound not found in list = Object_Drop
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.122160 ms
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 733.
-Total: 1.567346 ms (FindLiveObjects: 0.038916 ms CreateObjectMapping: 0.023948 ms MarkObjects: 0.388308 ms  DeleteObjects: 1.115745 ms)
+Total: 1.386205 ms (FindLiveObjects: 0.054710 ms CreateObjectMapping: 0.025161 ms MarkObjects: 0.346990 ms  DeleteObjects: 0.958757 ms)
 

@@ -1,0 +1,273 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 780 (ID=0x1004)
+    Vendor:   NVIDIA
+    VRAM:     3039 MB
+    Driver:   21.21.13.6909
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.021 seconds
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Unity\GameJam2017\Puddle Trouble\Looks Nice_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 59Hz; virtual: 3122x1080 at -1202,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.788481 ms
+It begins
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+26
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 5d6c -> priority: 1 
+  Thread -> id: 5f54 -> priority: 1 
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.106799 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 32345.
+Total: 5.451783 ms (FindLiveObjects: 0.894684 ms CreateObjectMapping: 0.479232 ms MarkObjects: 1.606804 ms  DeleteObjects: 2.470476 ms)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Animator:SetIntegerString (string,int)
+  at UnityEngine.Animator.SetInteger (System.String name, Int32 value) [0x00000] in <filename unknown>:0 
+  at PlayerControl.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 12.134709 ms
+
+Unloading 241 unused Assets to reduce memory usage. Loaded Objects now: 753.
+Total: 1.937703 ms (FindLiveObjects: 0.075483 ms CreateObjectMapping: 0.033645 ms MarkObjects: 0.366592 ms  DeleteObjects: 1.461396 ms)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.194267 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 32347.
+Total: 7.223891 ms (FindLiveObjects: 0.995036 ms CreateObjectMapping: 0.372736 ms MarkObjects: 2.012016 ms  DeleteObjects: 3.843808 ms)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Animator:SetIntegerString (string,int)
+  at UnityEngine.Animator.SetInteger (System.String name, Int32 value) [0x00000] in <filename unknown>:0 
+  at PlayerControl.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.513557 ms
+
+Unloading 241 unused Assets to reduce memory usage. Loaded Objects now: 753.
+Total: 1.756601 ms (FindLiveObjects: 0.180224 ms CreateObjectMapping: 0.023990 ms MarkObjects: 0.325047 ms  DeleteObjects: 1.227046 ms)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.198363 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 32347.
+Total: 5.478992 ms (FindLiveObjects: 1.045359 ms CreateObjectMapping: 0.332069 ms MarkObjects: 1.634891 ms  DeleteObjects: 2.466380 ms)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AudioManager: Sound not found in list = Object_Drop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Animator:SetIntegerString (string,int)
+  at UnityEngine.Animator.SetInteger (System.String name, Int32 value) [0x00000] in <filename unknown>:0 
+  at PlayerControl.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.526724 ms
+
+Unloading 241 unused Assets to reduce memory usage. Loaded Objects now: 753.
+Total: 2.901434 ms (FindLiveObjects: 1.126694 ms CreateObjectMapping: 0.024283 ms MarkObjects: 0.357230 ms  DeleteObjects: 1.393227 ms)
+

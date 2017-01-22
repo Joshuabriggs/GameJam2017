@@ -83,7 +83,7 @@ public class StageManager : MonoBehaviour
            
         }
 
-        if (m_round < 3)
+        if (m_round < 2)
         {
             if (m_otimer > m_spawnrate)
             {
@@ -92,7 +92,7 @@ public class StageManager : MonoBehaviour
             }
         }
 
-        if (m_round < 5 && m_round >= 3)
+        if (m_round < 4 && m_round >= 2)
         {
             m_spawnChoice = Random.Range(1, 2);
 
@@ -124,7 +124,7 @@ public class StageManager : MonoBehaviour
 
         }
 
-        if (m_round < 7 && m_round >= 5)
+        if (m_round < 7 && m_round >= 4)
         {
             m_spawnChoice = Random.Range(1, 3);
 

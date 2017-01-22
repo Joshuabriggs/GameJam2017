@@ -52,7 +52,7 @@ public class PlayerControl : MonoBehaviour
         m_fairy = GetComponentInChildren<SpriteRenderer>();
         m_flutter = GetComponentInChildren<Animator>();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -82,7 +82,7 @@ public class PlayerControl : MonoBehaviour
 
         if(m_jumping == false)
         {
-            m_floatPower = 0.5f;
+            m_floatPower = 1.5f;
         }
         else
         {
@@ -196,25 +196,25 @@ public class PlayerControl : MonoBehaviour
         if (keyRight)
         {
             m_transform.Translate(new Vector3(1,0,0) * -m_movementSpeed * Time.deltaTime, Space.Self);
-            m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_lthrust.transform.position);
+            m_rBody.AddForceAtPosition(m_transform.up * m_floatPower, m_lthrust.transform.position);
         }
         //Move Right
         if (keyLeft)
         {
             m_transform.Translate(new Vector3(1, 0, 0) * m_movementSpeed * Time.deltaTime, Space.Self);
-            m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_rthrust.transform.position);
+            m_rBody.AddForceAtPosition(m_transform.up * m_floatPower, m_rthrust.transform.position);
         }
         //Move Up
         if (keyUp)
         {
             m_transform.Translate(new Vector3(0, 0, 1) * m_movementSpeed * Time.deltaTime, Space.Self);
-            m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_fthrust.transform.position);
+            m_rBody.AddForceAtPosition(m_transform.up * m_floatPower, m_fthrust.transform.position);
         }
         //Move Down
         if (keyDown)
         {
             m_transform.Translate(new Vector3(0, 0, 1) * -m_movementSpeed * Time.deltaTime, Space.Self);
-            m_rBody.AddForceAtPosition(new Vector3(0, 1, 0) * m_floatPower, m_bthrust.transform.position);
+            m_rBody.AddForceAtPosition(m_transform.up * m_floatPower, m_bthrust.transform.position);
         }     
         //Rotate Left
         if (keyRLeft)

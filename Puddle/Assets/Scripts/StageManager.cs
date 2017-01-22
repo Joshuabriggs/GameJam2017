@@ -281,7 +281,7 @@ public class StageManager : MonoBehaviour
     void scoreSpawn()
     {
         Destroy(GameObject.FindGameObjectWithTag("Score"));
-        Instantiate(m_scorePoint, new Vector3(Random.Range(-20, 20), 3, Random.Range(-20, 20)), Quaternion.identity);
+        Instantiate(m_scorePoint, new Vector3(Random.Range(-20, 20), 5, Random.Range(-20, 20)), Quaternion.Euler(90,0,0));
     }
     public void addScore()
     {

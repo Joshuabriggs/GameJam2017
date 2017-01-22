@@ -17,7 +17,7 @@ public class Testwave : MonoBehaviour {
         Physics.IgnoreCollision(m_floor.GetComponent<Collider>(), GetComponent<Collider>());
         if(m_splashType == 2 || m_splashType == 4)
         {
-            m_transform.localScale *= 1.2f;
+            m_transform.localScale *= 1.3f;
         }
         
 	}
@@ -76,7 +76,7 @@ public class Testwave : MonoBehaviour {
                 }
                 else
                 {
-                    m_transform.localScale += new Vector3(m_speed * 2, -m_speed, m_speed * 2);
+                    m_transform.localScale += new Vector3(m_speed * 3, -m_speed, m_speed * 3);
                 }
 
                 if (m_transform.position.y < -10)

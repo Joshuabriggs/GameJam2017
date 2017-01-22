@@ -16,9 +16,10 @@ public class CameraControl : MonoBehaviour {
     {
         float currentAngle = transform.eulerAngles.y;
         float desiredAngle = target.transform.eulerAngles.y;
+        float desiredAnglex = target.transform.eulerAngles.x;
         float angle = Mathf.LerpAngle(currentAngle, desiredAngle, Time.deltaTime);
 
-        Quaternion rotation = Quaternion.Euler(0, desiredAngle + 180, 0);
+        Quaternion rotation = Quaternion.Euler(-desiredAnglex, desiredAngle + 180, 0);
         transform.position = target.transform.position - (rotation * offset);
 
         transform.LookAt(target.transform);

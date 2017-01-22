@@ -32,6 +32,7 @@ public class UIManager : MonoBehaviour {
             UIElements[10].SetActive(false);
             UIElements[11].SetActive(false);
             UIElements[12].SetActive(false);
+            UIElements[13].SetActive(true);
             if (!first)
             {
                 GameObject.Find("Number (2)").GetComponent<Text>().text = "" + PlayerPrefs.GetInt("HighScore");
@@ -55,7 +56,8 @@ public class UIManager : MonoBehaviour {
             UIElements[10].SetActive(false);
             UIElements[11].SetActive(false);
             UIElements[12].SetActive(false);
-           
+            UIElements[13].SetActive(true);
+
         }
         if (currentState == 2)
         {
@@ -72,6 +74,7 @@ public class UIManager : MonoBehaviour {
             UIElements[10].SetActive(true);
             UIElements[11].SetActive(true);
             UIElements[12].SetActive(true);
+            UIElements[13].SetActive(false);
         }
     }
     public void ChangeState(int state)
